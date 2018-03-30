@@ -1,0 +1,97 @@
+html, body{
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+#user-messages{
+	color: brown;
+}
+
+.board{
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid #11446d;
+}
+
+/* default tile */
+.board-tile{
+	background-color: rgb(123,184,232);
+	width: 10%;
+	padding-top: 10%;
+	position: relative;
+	border: 2px solid #11446d;
+	transition: all 0.2s;
+}
+.board-tile:hover{
+	background-color: rgba(123,184,232, 0.6);
+}
+
+/* shot tile */
+.board-tile.is-shot{
+	background-color: rgb(255,255,255);
+}
+
+.board-tile.is-shot:hover{
+	background-color: rgb(255,255,255);
+}
+
+/* shot with boat*/
+.board-tile.is-shot.has-ship{
+	background-color: rgb(255,0,0);
+}
+
+.board-tile.is-shot.has-ship:hover{
+	background-color: rgb(255,0,0);
+}
+
+/* tile with boat sunk */
+.board-tile.is-shot.has-ship.is-sunk{
+	background-color: rgb(0,0,0);
+}
+
+.board-tile.is-shot.has-ship.is-sunk:hover{
+	background-color: rgb(0,0,0);
+}
+
+/* tile selecting ship*/
+.board-tile.has-ship-hover{
+	background-color: rgb(200,200,200);
+}
+
+.board-tile.has-ship-hover:hover{
+	background-color: rgb(200,200,200);
+}
+
+/* tile with ship */
+.board-tile.has-ship{
+	background-color: rgb(150,150,150);
+}
+
+.board-tile.has-ship:hover{
+	background-color: rgb(150,150,150);
+}
+
+/* ship selector */
+.ship{
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.board-tile-content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+}
+.font-green{
+	color: green;
+}
+
+.bold{
+	font-weight: 900;
+}
+

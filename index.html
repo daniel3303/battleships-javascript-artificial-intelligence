@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>BlattleShips</title>
+		<link type="text/css" rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:100,300,400,500,600,700" rel="stylesheet">
+	</head>
+	<body>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mt-5">
+					<h3 class="text-center" id="user-messages"></h3>
+				</div>
+			</div>
+			<!--<div class="row justify-content-center">
+				<div class="col-4">
+					Número de jogos: <span class="num-games">0</span><br />
+					Média de tiros por jogo: <span class="avg-moves">0</span><br />
+				</div>
+			</div>-->
+			<div class="row">
+				<div class="col-md-6 mt-5">
+					<div class="row align-items-center">
+						<div class="col-md-3 pr-0">
+							<div id="player-stats">
+								<div class="ships">
+									<p class="ship" length="2">Barco Patrulha</p>
+									<p class="ship" length="3">Submarino</p>
+									<p class="ship" length="3">Contratorpedeiro</p>
+									<p class="ship" length="4">Navio de guerra</p>
+									<p class="ship" length="5">Porta-aviões</p>
+									<button id="rotate-ship" class="btn btn-primary">Rodar Navio</button>
+								</div><!-- ships -->
+							</div>
+						</div>
+						<div class="col-md-9">
+							<h2>Jogador</h2>
+							<div id="player-board">
+							</div>
+						</div>
+					</div><!-- row -->
+				</div><!-- col-md-6-->
+				
+				<div class="col-md-6 mt-5">
+					<div class="row">
+						<div class="col-md-9">
+							<h2>Computador</h2>
+							<div id="computer-board">
+							</div>
+						</div>
+						<div class="col-md-3 pl-0">
+							<div id="computer-stats">
+							</div>
+						</div>
+					</div><!-- row -->
+				</div><!-- col-md-6-->
+			</div><!-- row -->
+		</div><!-- container -->
+		
+		
+		
+		<!-- vendor libs -->
+		<script type="text/javascript" src="vendor/jquery/jquery.js"></script>
+		<script type="text/javascript" src="vendor/popper/popper.min.js"></script>
+		<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		
+		
+		<!-- game components -->
+		<script type="text/javascript" src="js/utils/Util.js"></script>
+		<script type="text/javascript" src="js/exceptions/Exception.js"></script>
+		<script type="text/javascript" src="js/exceptions/InvalidArgumentException.js"></script>
+		<script type="text/javascript" src="js/exceptions/TileNotFoundException.js"></script>
+		<script type="text/javascript" src="js/entities/Boat.js"></script>
+		<script type="text/javascript" src="js/utils/viewers/HTMLBoardViewer.js"></script>
+		<script type="text/javascript" src="js/utils/viewers/HTMLEnemyBoardViewer.js"></script>
+		<script type="text/javascript" src="js/utils/events/HTMLBoardEventHandler.js"></script>
+		<script type="text/javascript" src="js/board/Tile.js"></script>
+		<script type="text/javascript" src="js/board/BoardTileManager.js"></script>
+		<script type="text/javascript" src="js/board/Board.js"></script>
+		<script type="text/javascript" src="js/board/BoardFacade.js"></script>
+		<script type="text/javascript" src="js/board/PlayerBoardFacade.js"></script>
+		<script type="text/javascript" src="js/board/AIBoardFacade.js"></script>
+		<script type="text/javascript" src="js/agents/heuristics/AbstractHeuristic.js"></script>
+		<script type="text/javascript" src="js/agents/heuristics/FirstHeuristic.js"></script>
+		<script type="text/javascript" src="js/agents/heuristics/SecondHeuristic.js"></script>
+		<script type="text/javascript" src="js/agents/heuristics/ThirdHeuristic.js"></script>
+		<script type="text/javascript" src="js/agents/UtilityCell.js"></script>
+		<script type="text/javascript" src="js/agents/UtilityGrid.js"></script>
+		<script type="text/javascript" src="js/agents/AIPlayer.js"></script>
+		<script type="text/javascript" src="js/BattleShips.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		
+	</body>
+</html>
